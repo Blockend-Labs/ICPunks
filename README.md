@@ -23,26 +23,32 @@ This project is sponsored by the Dfinity Developer Grant Programme.
 
 ## Setup
 
-The first step to setup ICPunks locally is to clone this git repository:
 
-Having dfx version 0.7.2 is important:
+Having dfx version 0.7.2 is important, it's an older version:
 
 ```shell
 $ DFX_VERSION=0.7.2 sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"
 $ dfx --version # check that version is 0.7.2
+```
+
+The first step to setup ICPunks locally is to clone this git repository:
+
+```bash
 $ git clone git@github.com:stopak/ICPunks.git
 $ cd ICPunks
 
 ```
 
-If you don't have vessel yet you can install it by running an install script included in this project:\
+If you don't have vessel yet you can install it by running an install script included in this project:
+
 ```shell
 
 # Install vessel
 $ ./scripts/vessel-install.sh # This script gives error on ubuntu
 
 ```
-This script did not work on ubuntu
+
+This script does work on ubuntu
 
 In case it doesn't work: https://github.com/dfinity/vessel/releases 
 and put it in `/usr/local/bin` and do a `sudo chmod +x` on it
